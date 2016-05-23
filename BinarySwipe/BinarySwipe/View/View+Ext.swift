@@ -7,17 +7,8 @@
 //
 
 import Foundation
-
-//
-//  UIView+Additions.swift
-//  meWrap
-//
-//  Created by Sergey Maximenko on 10/13/15.
-//  Copyright © 2015 Ravenpod. All rights reserved.
-//
-
 import UIKit
-//import SnapKit
+import SnapKit
 
 func animate(animated: Bool = true, duration: NSTimeInterval = 0.3, curve: UIViewAnimationCurve = .EaseInOut, @noescape animations: () -> ()) {
     if animated {
@@ -68,11 +59,11 @@ extension UIView {
         return subview
     }
     
-//    func add<T: UIView>(subview: T, @noescape _ layout: (make: ConstraintMaker) -> Void) -> T {
-//        addSubview(subview)
-//        subview.snp_makeConstraints(closure: layout)
-//        return subview
-//    }
+    func add<T: UIView>(subview: T, @noescape _ layout: (make: ConstraintMaker) -> Void) -> T {
+        addSubview(subview)
+        subview.snp_makeConstraints(closure: layout)
+        return subview
+    }
     
     func forceLayout() {
         setNeedsLayout()

@@ -141,9 +141,9 @@ class BaseViewController: UIViewController, KeyboardNotifying {
     func keyboardWillShow(keyboard: Keyboard) {
         if let keyboardBottomGuideView = keyboardBottomGuideView {
             keyboard.performAnimation({ () in
-//                keyboardBottomGuideView.snp_updateConstraints(closure: { (make) in
-//                    make.bottom.equalTo(view).inset(keyboardBottomGuideViewAdjustment(keyboard))
-//                })
+                keyboardBottomGuideView.snp_updateConstraints(closure: { (make) in
+                    make.bottom.equalTo(view).inset(keyboardBottomGuideViewAdjustment(keyboard))
+                })
                 view.layoutIfNeeded()
             })
         } else {
@@ -157,9 +157,9 @@ class BaseViewController: UIViewController, KeyboardNotifying {
     func keyboardWillHide(keyboard: Keyboard) {
         if let keyboardBottomGuideView = keyboardBottomGuideView {
             keyboard.performAnimation({ () in
-//                keyboardBottomGuideView.snp_updateConstraints(closure: { (make) in
-//                    make.bottom.equalTo(view)
-//                })
+                keyboardBottomGuideView.snp_updateConstraints(closure: { (make) in
+                    make.bottom.equalTo(view)
+                })
                 view.layoutIfNeeded()
             })
         } else {
