@@ -8,24 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		561061E91CF2E6C400A8E9BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561061E81CF2E6C400A8E9BB /* AppDelegate.swift */; };
-		561061EB1CF2E6C400A8E9BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561061EA1CF2E6C400A8E9BB /* ViewController.swift */; };
 		561061EE1CF2E6C400A8E9BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561061EC1CF2E6C400A8E9BB /* Main.storyboard */; };
 		561061F01CF2E6C400A8E9BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561061EF1CF2E6C400A8E9BB /* Assets.xcassets */; };
 		561061F31CF2E6C400A8E9BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561061F11CF2E6C400A8E9BB /* LaunchScreen.storyboard */; };
 		561061FC1CF2EC8A00A8E9BB /* binaryswipe.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 561061FB1CF2EC8A00A8E9BB /* binaryswipe.ttf */; };
 		562F4E6D1CF2F46000B52390 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 562F4E6C1CF2F46000B52390 /* iTunesArtwork */; };
+		562F4E6F1CF2FFEF00B52390 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E6E1CF2FFEF00B52390 /* BaseViewController.swift */; };
+		562F4E771CF301DF00B52390 /* SlimLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E731CF301DF00B52390 /* SlimLogger.swift */; };
+		562F4E781CF301DF00B52390 /* SlimLoggerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E741CF301DF00B52390 /* SlimLoggerConfig.swift */; };
+		562F4E791CF301DF00B52390 /* SlimLogglyDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E751CF301DF00B52390 /* SlimLogglyDestination.swift */; };
+		562F4E7A1CF301DF00B52390 /* SlimLogglyDestinationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E761CF301DF00B52390 /* SlimLogglyDestinationConfig.swift */; };
+		562F4E7C1CF3021900B52390 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E7B1CF3021900B52390 /* Logger.swift */; };
+		562F4E7F1CF3055700B52390 /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E7E1CF3055700B52390 /* Notifier.swift */; };
+		562F4E811CF305AF00B52390 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E801CF305AF00B52390 /* Keyboard.swift */; };
+		562F4E831CF305F700B52390 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E821CF305F700B52390 /* Constants.swift */; };
+		562F4E851CF307C200B52390 /* GenericCollections+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E841CF307C200B52390 /* GenericCollections+Ext.swift */; };
+		562F4E871CF3087200B52390 /* Storyboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E861CF3087200B52390 /* Storyboard+Ext.swift */; };
+		562F4E8B1CF30B2100B52390 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E8A1CF30B2100B52390 /* View+Ext.swift */; };
+		562F4E8D1CF30BED00B52390 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E8C1CF30BED00B52390 /* Dispatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		561061E51CF2E6C400A8E9BB /* BinarySwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinarySwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		561061E81CF2E6C400A8E9BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		561061EA1CF2E6C400A8E9BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		561061ED1CF2E6C400A8E9BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		561061EF1CF2E6C400A8E9BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		561061F21CF2E6C400A8E9BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		561061F41CF2E6C400A8E9BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		561061FB1CF2EC8A00A8E9BB /* binaryswipe.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = binaryswipe.ttf; sourceTree = "<group>"; };
 		562F4E6C1CF2F46000B52390 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		562F4E6E1CF2FFEF00B52390 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		562F4E731CF301DF00B52390 /* SlimLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlimLogger.swift; sourceTree = "<group>"; };
+		562F4E741CF301DF00B52390 /* SlimLoggerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlimLoggerConfig.swift; sourceTree = "<group>"; };
+		562F4E751CF301DF00B52390 /* SlimLogglyDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlimLogglyDestination.swift; sourceTree = "<group>"; };
+		562F4E761CF301DF00B52390 /* SlimLogglyDestinationConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlimLogglyDestinationConfig.swift; sourceTree = "<group>"; };
+		562F4E7B1CF3021900B52390 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Model/Logger.swift; sourceTree = "<group>"; };
+		562F4E7E1CF3055700B52390 /* Notifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Notifier.swift; path = Model/Notifier.swift; sourceTree = "<group>"; };
+		562F4E801CF305AF00B52390 /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keyboard.swift; path = Model/Keyboard.swift; sourceTree = "<group>"; };
+		562F4E821CF305F700B52390 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		562F4E841CF307C200B52390 /* GenericCollections+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GenericCollections+Ext.swift"; path = "Model/GenericCollections+Ext.swift"; sourceTree = "<group>"; };
+		562F4E861CF3087200B52390 /* Storyboard+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Storyboard+Ext.swift"; path = "Model/Storyboard+Ext.swift"; sourceTree = "<group>"; };
+		562F4E8A1CF30B2100B52390 /* View+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "View+Ext.swift"; path = "Model/View+Ext.swift"; sourceTree = "<group>"; };
+		562F4E8C1CF30BED00B52390 /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dispatch.swift; path = Model/Dispatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +68,7 @@
 			children = (
 				561061E71CF2E6C400A8E9BB /* BinarySwipe */,
 				561061FA1CF2EC4800A8E9BB /* Resources */,
+				562F4E711CF3019200B52390 /* Frameworks */,
 				561061E61CF2E6C400A8E9BB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,12 +84,14 @@
 		561061E71CF2E6C400A8E9BB /* BinarySwipe */ = {
 			isa = PBXGroup;
 			children = (
+				562F4E7D1CF3043800B52390 /* Model */,
 				561061E81CF2E6C400A8E9BB /* AppDelegate.swift */,
-				561061EA1CF2E6C400A8E9BB /* ViewController.swift */,
+				562F4E701CF2FFFF00B52390 /* ViewControllers */,
 				561061EC1CF2E6C400A8E9BB /* Main.storyboard */,
 				561061EF1CF2E6C400A8E9BB /* Assets.xcassets */,
 				561061F11CF2E6C400A8E9BB /* LaunchScreen.storyboard */,
 				561061F41CF2E6C400A8E9BB /* Info.plist */,
+				562F4E821CF305F700B52390 /* Constants.swift */,
 			);
 			path = BinarySwipe;
 			sourceTree = "<group>";
@@ -76,6 +103,48 @@
 				562F4E6C1CF2F46000B52390 /* iTunesArtwork */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		562F4E701CF2FFFF00B52390 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				562F4E6E1CF2FFEF00B52390 /* BaseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		562F4E711CF3019200B52390 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				562F4E721CF301DF00B52390 /* SlimLogger */,
+			);
+			name = Frameworks;
+			path = BinarySwipe;
+			sourceTree = "<group>";
+		};
+		562F4E721CF301DF00B52390 /* SlimLogger */ = {
+			isa = PBXGroup;
+			children = (
+				562F4E731CF301DF00B52390 /* SlimLogger.swift */,
+				562F4E741CF301DF00B52390 /* SlimLoggerConfig.swift */,
+				562F4E751CF301DF00B52390 /* SlimLogglyDestination.swift */,
+				562F4E761CF301DF00B52390 /* SlimLogglyDestinationConfig.swift */,
+			);
+			path = SlimLogger;
+			sourceTree = "<group>";
+		};
+		562F4E7D1CF3043800B52390 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				562F4E7B1CF3021900B52390 /* Logger.swift */,
+				562F4E7E1CF3055700B52390 /* Notifier.swift */,
+				562F4E801CF305AF00B52390 /* Keyboard.swift */,
+				562F4E841CF307C200B52390 /* GenericCollections+Ext.swift */,
+				562F4E861CF3087200B52390 /* Storyboard+Ext.swift */,
+				562F4E8A1CF30B2100B52390 /* View+Ext.swift */,
+				562F4E8C1CF30BED00B52390 /* Dispatch.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +220,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				561061EB1CF2E6C400A8E9BB /* ViewController.swift in Sources */,
+				562F4E7A1CF301DF00B52390 /* SlimLogglyDestinationConfig.swift in Sources */,
+				562F4E7F1CF3055700B52390 /* Notifier.swift in Sources */,
+				562F4E851CF307C200B52390 /* GenericCollections+Ext.swift in Sources */,
+				562F4E771CF301DF00B52390 /* SlimLogger.swift in Sources */,
+				562F4E871CF3087200B52390 /* Storyboard+Ext.swift in Sources */,
+				562F4E791CF301DF00B52390 /* SlimLogglyDestination.swift in Sources */,
+				562F4E811CF305AF00B52390 /* Keyboard.swift in Sources */,
+				562F4E831CF305F700B52390 /* Constants.swift in Sources */,
 				561061E91CF2E6C400A8E9BB /* AppDelegate.swift in Sources */,
+				562F4E781CF301DF00B52390 /* SlimLoggerConfig.swift in Sources */,
+				562F4E6F1CF2FFEF00B52390 /* BaseViewController.swift in Sources */,
+				562F4E8B1CF30B2100B52390 /* View+Ext.swift in Sources */,
+				562F4E7C1CF3021900B52390 /* Logger.swift in Sources */,
+				562F4E8D1CF30BED00B52390 /* Dispatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
