@@ -13,6 +13,7 @@
 		561061F01CF2E6C400A8E9BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561061EF1CF2E6C400A8E9BB /* Assets.xcassets */; };
 		561061F31CF2E6C400A8E9BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561061F11CF2E6C400A8E9BB /* LaunchScreen.storyboard */; };
 		561061FC1CF2EC8A00A8E9BB /* binaryswipe.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 561061FB1CF2EC8A00A8E9BB /* binaryswipe.ttf */; };
+		562F4E6D1CF2F46000B52390 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 562F4E6C1CF2F46000B52390 /* iTunesArtwork */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		561061F21CF2E6C400A8E9BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		561061F41CF2E6C400A8E9BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		561061FB1CF2EC8A00A8E9BB /* binaryswipe.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = binaryswipe.ttf; sourceTree = "<group>"; };
+		562F4E6C1CF2F46000B52390 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				561061FB1CF2EC8A00A8E9BB /* binaryswipe.ttf */,
+				562F4E6C1CF2F46000B52390 /* iTunesArtwork */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 				561061FC1CF2EC8A00A8E9BB /* binaryswipe.ttf in Resources */,
 				561061F31CF2E6C400A8E9BB /* LaunchScreen.storyboard in Resources */,
 				561061F01CF2E6C400A8E9BB /* Assets.xcassets in Resources */,
+				562F4E6D1CF2F46000B52390 /* iTunesArtwork in Resources */,
 				561061EE1CF2E6C400A8E9BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +302,7 @@
 				561061F91CF2E6C400A8E9BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
