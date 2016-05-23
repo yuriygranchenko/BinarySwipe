@@ -38,9 +38,6 @@ struct Storyboard {
 extension UIStoryboard {
     
     @nonobjc static let main = UIStoryboard(name: "Main", bundle: nil)
-    @nonobjc static let signUp = UIStoryboard(name: "SignUp", bundle: nil)
-    @nonobjc static let camera = UIStoryboard(name: "Camera", bundle: nil)
-    @nonobjc static let introduction = UIStoryboard(name: "Introduction", bundle: nil)
     
     func present(animated: Bool) {
         UINavigationController.main.viewControllers = [instantiateInitialViewController()!]

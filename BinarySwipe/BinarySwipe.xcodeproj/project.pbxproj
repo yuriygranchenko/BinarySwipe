@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4DA82855916A5A24D26D2D63 /* Pods_BinarySwipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDBE749D39CF735C24BB987 /* Pods_BinarySwipe.framework */; };
+		5602F79B1CF3609200528B38 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5602F7991CF3609200528B38 /* FBSDKCoreKit.framework */; };
+		5602F79C1CF3609200528B38 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5602F79A1CF3609200528B38 /* FBSDKLoginKit.framework */; };
 		561061E91CF2E6C400A8E9BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561061E81CF2E6C400A8E9BB /* AppDelegate.swift */; };
 		561061EE1CF2E6C400A8E9BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561061EC1CF2E6C400A8E9BB /* Main.storyboard */; };
 		561061F01CF2E6C400A8E9BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561061EF1CF2E6C400A8E9BB /* Assets.xcassets */; };
@@ -28,10 +30,18 @@
 		562F4E8D1CF30BED00B52390 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E8C1CF30BED00B52390 /* Dispatch.swift */; };
 		56CAADEE1CF34566005D770B /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CAADED1CF34566005D770B /* View+Ext.swift */; };
 		56CAADF01CF3473C005D770B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CAADEF1CF3473C005D770B /* LoginViewController.swift */; };
+		56CAADF21CF349F3005D770B /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CAADF11CF349F3005D770B /* String+Ext.swift */; };
+		56CAADF41CF34AC6005D770B /* SegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CAADF31CF34AC6005D770B /* SegmentControl.swift */; };
+		56CAADF61CF34B2C005D770B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CAADF51CF34B2C005D770B /* Button.swift */; };
+		56CAADF81CF34EA0005D770B /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CAADF71CF34EA0005D770B /* Label.swift */; };
+		56CAADFA1CF3527F005D770B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CAADF91CF3527F005D770B /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		34497906C02D68867BD8DB51 /* Pods-BinarySwipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinarySwipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BinarySwipe/Pods-BinarySwipe.debug.xcconfig"; sourceTree = "<group>"; };
+		5602F7991CF3609200528B38 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		5602F79A1CF3609200528B38 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		5602F79D1CF3626000528B38 /* BinarySwipe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BinarySwipe-Bridging-Header.h"; sourceTree = "<group>"; };
 		561061E51CF2E6C400A8E9BB /* BinarySwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinarySwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		561061E81CF2E6C400A8E9BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		561061ED1CF2E6C400A8E9BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +64,11 @@
 		562F4E8C1CF30BED00B52390 /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dispatch.swift; path = Model/Dispatch.swift; sourceTree = "<group>"; };
 		56CAADED1CF34566005D770B /* View+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		56CAADEF1CF3473C005D770B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		56CAADF11CF349F3005D770B /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Ext.swift"; path = "Model/String+Ext.swift"; sourceTree = "<group>"; };
+		56CAADF31CF34AC6005D770B /* SegmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentControl.swift; sourceTree = "<group>"; };
+		56CAADF51CF34B2C005D770B /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		56CAADF71CF34EA0005D770B /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		56CAADF91CF3527F005D770B /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		F963323913B681E21F681C1B /* Pods-BinarySwipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinarySwipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-BinarySwipe/Pods-BinarySwipe.release.xcconfig"; sourceTree = "<group>"; };
 		FDDBE749D39CF735C24BB987 /* Pods_BinarySwipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BinarySwipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -64,12 +79,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DA82855916A5A24D26D2D63 /* Pods_BinarySwipe.framework in Frameworks */,
+				5602F79B1CF3609200528B38 /* FBSDKCoreKit.framework in Frameworks */,
+				5602F79C1CF3609200528B38 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5602F7981CF3606700528B38 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				5602F7991CF3609200528B38 /* FBSDKCoreKit.framework */,
+				5602F79A1CF3609200528B38 /* FBSDKLoginKit.framework */,
+			);
+			name = Facebook;
+			path = ../Frameworks/Facebook;
+			sourceTree = "<group>";
+		};
 		561061DC1CF2E6C400A8E9BB = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +128,7 @@
 				561061EF1CF2E6C400A8E9BB /* Assets.xcassets */,
 				561061F11CF2E6C400A8E9BB /* LaunchScreen.storyboard */,
 				561061F41CF2E6C400A8E9BB /* Info.plist */,
+				5602F79D1CF3626000528B38 /* BinarySwipe-Bridging-Header.h */,
 			);
 			path = BinarySwipe;
 			sourceTree = "<group>";
@@ -126,6 +154,7 @@
 		562F4E711CF3019200B52390 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5602F7981CF3606700528B38 /* Facebook */,
 				562F4E721CF301DF00B52390 /* SlimLogger */,
 				FDDBE749D39CF735C24BB987 /* Pods_BinarySwipe.framework */,
 			);
@@ -153,6 +182,7 @@
 				562F4E841CF307C200B52390 /* GenericCollections+Ext.swift */,
 				562F4E861CF3087200B52390 /* Storyboard+Ext.swift */,
 				562F4E8C1CF30BED00B52390 /* Dispatch.swift */,
+				56CAADF11CF349F3005D770B /* String+Ext.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -161,6 +191,10 @@
 			isa = PBXGroup;
 			children = (
 				56CAADED1CF34566005D770B /* View+Ext.swift */,
+				56CAADF31CF34AC6005D770B /* SegmentControl.swift */,
+				56CAADF51CF34B2C005D770B /* Button.swift */,
+				56CAADF71CF34EA0005D770B /* Label.swift */,
+				56CAADF91CF3527F005D770B /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,18 +334,23 @@
 			files = (
 				56CAADEE1CF34566005D770B /* View+Ext.swift in Sources */,
 				562F4E7A1CF301DF00B52390 /* SlimLogglyDestinationConfig.swift in Sources */,
+				56CAADFA1CF3527F005D770B /* GradientView.swift in Sources */,
 				562F4E7F1CF3055700B52390 /* Notifier.swift in Sources */,
 				56CAADF01CF3473C005D770B /* LoginViewController.swift in Sources */,
 				562F4E851CF307C200B52390 /* GenericCollections+Ext.swift in Sources */,
 				562F4E771CF301DF00B52390 /* SlimLogger.swift in Sources */,
 				562F4E871CF3087200B52390 /* Storyboard+Ext.swift in Sources */,
+				56CAADF61CF34B2C005D770B /* Button.swift in Sources */,
 				562F4E791CF301DF00B52390 /* SlimLogglyDestination.swift in Sources */,
+				56CAADF81CF34EA0005D770B /* Label.swift in Sources */,
 				562F4E811CF305AF00B52390 /* Keyboard.swift in Sources */,
 				562F4E831CF305F700B52390 /* Constants.swift in Sources */,
 				561061E91CF2E6C400A8E9BB /* AppDelegate.swift in Sources */,
 				562F4E781CF301DF00B52390 /* SlimLoggerConfig.swift in Sources */,
 				562F4E6F1CF2FFEF00B52390 /* BaseViewController.swift in Sources */,
 				562F4E7C1CF3021900B52390 /* Logger.swift in Sources */,
+				56CAADF21CF349F3005D770B /* String+Ext.swift in Sources */,
+				56CAADF41CF34AC6005D770B /* SegmentControl.swift in Sources */,
 				562F4E8D1CF30BED00B52390 /* Dispatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,10 +465,17 @@
 			baseConfigurationReference = 34497906C02D68867BD8DB51 /* Pods-BinarySwipe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/Facebook",
+				);
 				INFOPLIST_FILE = BinarySwipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EP.BinarySwipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BinarySwipe/BinarySwipe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -438,10 +484,16 @@
 			baseConfigurationReference = F963323913B681E21F681C1B /* Pods-BinarySwipe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/Facebook",
+				);
 				INFOPLIST_FILE = BinarySwipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EP.BinarySwipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BinarySwipe/BinarySwipe-Bridging-Header.h";
 			};
 			name = Release;
 		};

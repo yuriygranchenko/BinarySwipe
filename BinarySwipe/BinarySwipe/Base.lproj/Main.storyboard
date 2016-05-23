@@ -3,7 +3,17 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+        <mutableArray key="binaryswipe.ttf">
+            <string>binaryswipe</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -13,15 +23,125 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="login" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="login" id="8bC-Xf-vdC" customClass="GradientView" customModule="BinarySwipe" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="r" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MK6-78-p4i" customClass="Label" customModule="BinarySwipe" customModuleProvider="target">
+                                <rect key="frame" x="126" y="44" width="70" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ilm-8j-BSE"/>
+                                    <constraint firstAttribute="width" constant="70" id="zki-vP-uv8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="binaryswipe" family="binaryswipe" pointSize="47"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to BinarySwipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwn-2C-20O">
+                                <rect key="frame" x="67" y="165" width="190" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get real-time alerts about what trades better" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aiz-ZD-X0V">
+                                <rect key="frame" x="7" y="196" width="307" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXV-IE-5iV" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="50" y="264" width="220" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5Rk-XU-NRF"/>
+                                    <constraint firstAttribute="width" constant="220" id="hHY-k9-UN4"/>
+                                </constraints>
+                                <state key="normal" title="button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXN-rq-lDV" customClass="Button" customModule="BinarySwipe" customModuleProvider="target">
+                                <rect key="frame" x="50" y="314" width="220" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="8ye-5f-Sf0"/>
+                                    <constraint firstAttribute="height" constant="40" id="L1q-F7-Kty"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <state key="normal" title="CREATE ACCOUNT">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11Y-bC-HhQ">
+                                <rect key="frame" x="38" y="434" width="247" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cz-47-kM8">
+                                        <rect key="frame" x="0.0" y="0.0" width="201" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztz-r2-KaE" customClass="Button" customModule="BinarySwipe" customModuleProvider="target">
+                                        <rect key="frame" x="201" y="0.0" width="46" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ztz-r2-KaE" secondAttribute="bottom" id="P54-by-Mop"/>
+                                    <constraint firstAttribute="bottom" secondItem="0cz-47-kM8" secondAttribute="bottom" id="R0O-rg-DHK"/>
+                                    <constraint firstItem="0cz-47-kM8" firstAttribute="top" secondItem="11Y-bC-HhQ" secondAttribute="top" id="Til-aX-gma"/>
+                                    <constraint firstAttribute="trailing" secondItem="ztz-r2-KaE" secondAttribute="trailing" id="cMD-QG-9Fw"/>
+                                    <constraint firstItem="ztz-r2-KaE" firstAttribute="top" secondItem="11Y-bC-HhQ" secondAttribute="top" id="g3m-ew-GyG"/>
+                                    <constraint firstItem="0cz-47-kM8" firstAttribute="trailing" secondItem="ztz-r2-KaE" secondAttribute="leading" id="rHP-OR-yZW"/>
+                                    <constraint firstItem="0cz-47-kM8" firstAttribute="leading" secondItem="11Y-bC-HhQ" secondAttribute="leading" id="w7W-Ke-Fea"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Aiz-ZD-X0V" firstAttribute="top" secondItem="qwn-2C-20O" secondAttribute="bottom" constant="10" id="1fg-zy-NKR"/>
+                            <constraint firstItem="MK6-78-p4i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="2qq-nX-PQO"/>
+                            <constraint firstItem="11Y-bC-HhQ" firstAttribute="top" secondItem="jXN-rq-lDV" secondAttribute="bottom" constant="80" id="7wN-D7-1ET"/>
+                            <constraint firstItem="aXV-IE-5iV" firstAttribute="top" secondItem="Aiz-ZD-X0V" secondAttribute="bottom" constant="50" id="Cvd-eC-RIW"/>
+                            <constraint firstItem="jXN-rq-lDV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MVP-zu-9GJ"/>
+                            <constraint firstItem="Aiz-ZD-X0V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a95-Dw-Bod"/>
+                            <constraint firstItem="qwn-2C-20O" firstAttribute="top" secondItem="MK6-78-p4i" secondAttribute="bottom" constant="51" id="e5L-xN-kOp"/>
+                            <constraint firstItem="jXN-rq-lDV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="hsH-6K-rXg"/>
+                            <constraint firstItem="11Y-bC-HhQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" constant="1" id="jcU-bZ-CXf"/>
+                            <constraint firstItem="aXV-IE-5iV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerYWithinMargins" id="tIo-tp-BIE"/>
+                            <constraint firstItem="qwn-2C-20O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2" id="vMA-nq-7VF"/>
+                            <constraint firstItem="aXV-IE-5iV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="vru-To-czl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.14966984010000001" green="0.83708408680000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.14966984010000001" green="0.27974872610000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="signInButton" destination="ztz-r2-KaE" id="t2H-QQ-LFd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="301.33333333333331" y="414.16666666666669"/>
+            <point key="canvasLocation" x="301" y="414"/>
         </scene>
     </scenes>
 </document>
