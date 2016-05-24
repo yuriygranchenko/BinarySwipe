@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -28,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="r" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MK6-78-p4i" customClass="Label" customModule="BinarySwipe" customModuleProvider="target">
-                                <rect key="frame" x="126" y="44" width="70" height="70"/>
+                                <rect key="frame" x="126" y="94" width="70" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="ilm-8j-BSE"/>
@@ -45,19 +45,19 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to BinarySwipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwn-2C-20O">
-                                <rect key="frame" x="67" y="165" width="190" height="21"/>
+                                <rect key="frame" x="67" y="215" width="190" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get real-time alerts about what trades better" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aiz-ZD-X0V">
-                                <rect key="frame" x="7" y="196" width="307" height="18"/>
+                                <rect key="frame" x="7" y="246" width="307" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXV-IE-5iV" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="50" y="264" width="220" height="40"/>
+                                <rect key="frame" x="50" y="314" width="220" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5Rk-XU-NRF"/>
                                     <constraint firstAttribute="width" constant="220" id="hHY-k9-UN4"/>
@@ -65,7 +65,7 @@
                                 <state key="normal" title="button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXN-rq-lDV" customClass="Button" customModule="BinarySwipe" customModuleProvider="target">
-                                <rect key="frame" x="50" y="314" width="220" height="40"/>
+                                <rect key="frame" x="50" y="364" width="220" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="8ye-5f-Sf0"/>
@@ -82,7 +82,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11Y-bC-HhQ">
-                                <rect key="frame" x="38" y="434" width="247" height="30"/>
+                                <rect key="frame" x="38" y="484" width="247" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cz-47-kM8">
                                         <rect key="frame" x="0.0" y="0.0" width="201" height="30"/>
@@ -120,9 +120,9 @@
                             <constraint firstItem="jXN-rq-lDV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MVP-zu-9GJ"/>
                             <constraint firstItem="Aiz-ZD-X0V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a95-Dw-Bod"/>
                             <constraint firstItem="qwn-2C-20O" firstAttribute="top" secondItem="MK6-78-p4i" secondAttribute="bottom" constant="51" id="e5L-xN-kOp"/>
-                            <constraint firstItem="jXN-rq-lDV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="hsH-6K-rXg"/>
+                            <constraint firstItem="jXN-rq-lDV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="hsH-6K-rXg"/>
                             <constraint firstItem="11Y-bC-HhQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" constant="1" id="jcU-bZ-CXf"/>
-                            <constraint firstItem="aXV-IE-5iV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerYWithinMargins" id="tIo-tp-BIE"/>
+                            <constraint firstItem="aXV-IE-5iV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerYWithinMargins" constant="50" id="tIo-tp-BIE"/>
                             <constraint firstItem="qwn-2C-20O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2" id="vMA-nq-7VF"/>
                             <constraint firstItem="aXV-IE-5iV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="vru-To-czl"/>
                         </constraints>
@@ -136,6 +136,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="facebookLoginButton" destination="aXV-IE-5iV" id="gW2-hZ-4eT"/>
                         <outlet property="signInButton" destination="ztz-r2-KaE" id="t2H-QQ-LFd"/>
                     </connections>
                 </viewController>

@@ -28,6 +28,7 @@
 		562F4E851CF307C200B52390 /* GenericCollections+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E841CF307C200B52390 /* GenericCollections+Ext.swift */; };
 		562F4E871CF3087200B52390 /* Storyboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E861CF3087200B52390 /* Storyboard+Ext.swift */; };
 		562F4E8D1CF30BED00B52390 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F4E8C1CF30BED00B52390 /* Dispatch.swift */; };
+		566042BE1CF44BA100A64A4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566042BD1CF44BA000A64A4B /* User.swift */; };
 		56CAADEE1CF34566005D770B /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CAADED1CF34566005D770B /* View+Ext.swift */; };
 		56CAADF01CF3473C005D770B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CAADEF1CF3473C005D770B /* LoginViewController.swift */; };
 		56CAADF21CF349F3005D770B /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CAADF11CF349F3005D770B /* String+Ext.swift */; };
@@ -62,6 +63,7 @@
 		562F4E841CF307C200B52390 /* GenericCollections+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GenericCollections+Ext.swift"; path = "Model/GenericCollections+Ext.swift"; sourceTree = "<group>"; };
 		562F4E861CF3087200B52390 /* Storyboard+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Storyboard+Ext.swift"; path = "Model/Storyboard+Ext.swift"; sourceTree = "<group>"; };
 		562F4E8C1CF30BED00B52390 /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dispatch.swift; path = Model/Dispatch.swift; sourceTree = "<group>"; };
+		566042BD1CF44BA000A64A4B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../../../../../macostik/Project/BinarySwipe/BinarySwipe/BinarySwipe/Model/User.swift; sourceTree = "<group>"; };
 		56CAADED1CF34566005D770B /* View+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		56CAADEF1CF3473C005D770B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		56CAADF11CF349F3005D770B /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Ext.swift"; path = "Model/String+Ext.swift"; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				562F4E861CF3087200B52390 /* Storyboard+Ext.swift */,
 				562F4E8C1CF30BED00B52390 /* Dispatch.swift */,
 				56CAADF11CF349F3005D770B /* String+Ext.swift */,
+				566042BD1CF44BA000A64A4B /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				56CAADF21CF349F3005D770B /* String+Ext.swift in Sources */,
 				56CAADF41CF34AC6005D770B /* SegmentControl.swift in Sources */,
 				562F4E8D1CF30BED00B52390 /* Dispatch.swift in Sources */,
+				566042BE1CF44BA100A64A4B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +476,7 @@
 				);
 				INFOPLIST_FILE = BinarySwipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = EP.BinarySwipe;
+				PRODUCT_BUNDLE_IDENTIFIER = binaryswipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BinarySwipe/BinarySwipe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -491,7 +495,7 @@
 				);
 				INFOPLIST_FILE = BinarySwipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = EP.BinarySwipe;
+				PRODUCT_BUNDLE_IDENTIFIER = binaryswipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BinarySwipe/BinarySwipe-Bridging-Header.h";
 			};
