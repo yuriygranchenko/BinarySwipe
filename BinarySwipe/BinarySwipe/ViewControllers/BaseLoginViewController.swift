@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  BaseLoginViewController.swift
 //  BinarySwipe
 //
 //  Created by Macostik on 5/23/16.
@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-class LoginViewController: BaseViewController, FBSDKLoginButtonDelegate {
+class BaseLoginViewController: BaseViewController, FBSDKLoginButtonDelegate {
     
     @IBOutlet var facebookLoginButton: FBSDKLoginButton!
-    @IBOutlet var signInButton: Button!
+    @IBOutlet var helperButton: Button!
     
     override func viewDidLoad() {
         signInButtonConfigure()
@@ -25,13 +25,15 @@ class LoginViewController: BaseViewController, FBSDKLoginButtonDelegate {
     }
     
     private func signInButtonConfigure() {
-        let title = NSMutableAttributedString(string:"Sign In".ls)
+        let title = NSMutableAttributedString(string:helperButton.titleLabel?.text ?? "")
         let range = NSMakeRange(0, title.length)
         title.addAttribute(NSUnderlineStyleAttributeName, value: NSUnderlineStyle.StyleSingle.rawValue, range: range)
         title.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(15.0), range: range)
         title.addAttribute(NSForegroundColorAttributeName, value: UIColor.whiteColor(), range: range)
-        signInButton.setAttributedTitle(title, forState: .Normal)
+        helperButton.setAttributedTitle(title, forState: .Normal)
     }
+    
+    //MARK: Facebook handler
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         let graphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, email, first_name, last_name, location"])
@@ -52,4 +54,26 @@ class LoginViewController: BaseViewController, FBSDKLoginButtonDelegate {
         let loginManager: FBSDKLoginManager = FBSDKLoginManager()
         loginManager.logOut()
     }
+}
+
+class SignInViewController: BaseLoginViewController {
+    
+    @IBAction func helperButtonClick(sender: AnyObject) {
+        navigationController?.pushViewController(Storyboard.Login.instantiate(), animated: true)
+    }
+}
+
+class LoginViewController: BaseLoginViewController {
+    
+    @IBAction func helperButtonClick(sender: AnyObject) {
+        navigationController?.pushViewController(Storyboard.CreateAccount.instantiate(), animated: true)
+    }
+}
+
+class CreateAccountViewController: BaseLoginViewController {
+    
+    @IBAction func helperButtonClick(sender: AnyObject) {
+        navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
 }

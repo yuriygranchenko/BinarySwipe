@@ -32,7 +32,9 @@ struct StoryboardObject<T: UIViewController> {
 }
 
 struct Storyboard {
+    static let SignIn = StoryboardObject<SignInViewController>("signin")
     static let Login = StoryboardObject<LoginViewController>("login")
+    static let CreateAccount = StoryboardObject<CreateAccountViewController>("createAccount")
 }
 
 extension UIStoryboard {

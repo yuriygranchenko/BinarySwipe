@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qZR-TX-zc3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -9,16 +9,20 @@
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
         </mutableArray>
         <mutableArray key="binaryswipe.ttf">
+            <string>binaryswipe</string>
+            <string>binaryswipe</string>
             <string>binaryswipe</string>
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Login View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="BinarySwipe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signin" id="BYZ-38-t0r" customClass="SignInViewController" customModule="BinarySwipe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -28,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="r" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MK6-78-p4i" customClass="Label" customModule="BinarySwipe" customModuleProvider="target">
-                                <rect key="frame" x="126" y="94" width="70" height="70"/>
+                                <rect key="frame" x="126" y="51" width="70" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="ilm-8j-BSE"/>
@@ -56,13 +60,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXV-IE-5iV" customClass="FBSDKLoginButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXV-IE-5iV" customClass="FBSDKLoginButton">
                                 <rect key="frame" x="50" y="314" width="220" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5Rk-XU-NRF"/>
                                     <constraint firstAttribute="width" constant="220" id="hHY-k9-UN4"/>
                                 </constraints>
-                                <state key="normal" title="button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXN-rq-lDV" customClass="Button" customModule="BinarySwipe" customModuleProvider="target">
                                 <rect key="frame" x="50" y="364" width="220" height="40"/>
@@ -77,12 +81,12 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
+                                        <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11Y-bC-HhQ">
-                                <rect key="frame" x="38" y="484" width="247" height="30"/>
+                                <rect key="frame" x="37" y="484" width="248" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cz-47-kM8">
                                         <rect key="frame" x="0.0" y="0.0" width="201" height="30"/>
@@ -91,12 +95,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztz-r2-KaE" customClass="Button" customModule="BinarySwipe" customModuleProvider="target">
-                                        <rect key="frame" x="201" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="201" y="0.0" width="47" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Sign In">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="helperButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lLa-Ii-utM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -119,7 +126,7 @@
                             <constraint firstItem="aXV-IE-5iV" firstAttribute="top" secondItem="Aiz-ZD-X0V" secondAttribute="bottom" constant="50" id="Cvd-eC-RIW"/>
                             <constraint firstItem="jXN-rq-lDV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MVP-zu-9GJ"/>
                             <constraint firstItem="Aiz-ZD-X0V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a95-Dw-Bod"/>
-                            <constraint firstItem="qwn-2C-20O" firstAttribute="top" secondItem="MK6-78-p4i" secondAttribute="bottom" constant="51" id="e5L-xN-kOp"/>
+                            <constraint firstItem="qwn-2C-20O" firstAttribute="top" secondItem="MK6-78-p4i" secondAttribute="bottom" constant="94" id="e5L-xN-kOp"/>
                             <constraint firstItem="jXN-rq-lDV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="hsH-6K-rXg"/>
                             <constraint firstItem="11Y-bC-HhQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" constant="1" id="jcU-bZ-CXf"/>
                             <constraint firstItem="aXV-IE-5iV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerYWithinMargins" constant="50" id="tIo-tp-BIE"/>
@@ -135,14 +142,404 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <navigationItem key="navigationItem" id="2Ba-Nt-ZOR"/>
                     <connections>
                         <outlet property="facebookLoginButton" destination="aXV-IE-5iV" id="gW2-hZ-4eT"/>
-                        <outlet property="signInButton" destination="ztz-r2-KaE" id="t2H-QQ-LFd"/>
+                        <outlet property="helperButton" destination="ztz-r2-KaE" id="UXA-fr-7nF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="301" y="414"/>
+            <point key="canvasLocation" x="797" y="414"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="skR-6m-96P">
+            <objects>
+                <viewController storyboardIdentifier="login" id="fTx-gk-9QI" customClass="LoginViewController" customModule="BinarySwipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="05w-eu-eua"/>
+                        <viewControllerLayoutGuide type="bottom" id="VwL-NB-Wre"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="login" id="5Sh-Nu-ww6" customClass="GradientView" customModule="BinarySwipe" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BinarySwipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WE-Fl-sRu">
+                                <rect key="frame" x="108" y="191" width="105" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uzs-CC-fPW" userLabel="EmailTextField" customClass="TextField" customModule="BinarySwipe" customModuleProvider="target">
+                                <rect key="frame" x="50" y="224" width="220" height="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xay-Ie-47x" userLabel="PasswordTextField" customClass="TextField" customModule="BinarySwipe" customModuleProvider="target">
+                                <rect key="frame" x="50" y="264" width="220" height="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bf-te-FtQ" customClass="Button" customModule="BinarySwipe" customModuleProvider="target">
+                                <rect key="frame" x="50" y="314" width="220" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Wdu-WT-YUi"/>
+                                    <constraint firstAttribute="height" constant="40" id="X4J-Rk-853"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orR-Xa-d7Q" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="50" y="364" width="220" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="IUc-ho-AJO"/>
+                                    <constraint firstAttribute="height" constant="40" id="iZ5-G5-geJ"/>
+                                </constraints>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yw7-QE-RYa">
+                                <rect key="frame" x="8" y="484" width="306" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKs-lR-PDU" customClass="Button" customModule="BinarySwipe" customModuleProvider="target">
+                                        <rect key="frame" x="201" y="0.0" width="105" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Create Account">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="helperButtonClick:" destination="fTx-gk-9QI" eventType="touchUpInside" id="4Um-Gz-RW8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uft-T1-MR8">
+                                        <rect key="frame" x="0.0" y="0.0" width="201" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NKs-lR-PDU" secondAttribute="trailing" id="6ku-Ty-HQe"/>
+                                    <constraint firstAttribute="bottom" secondItem="NKs-lR-PDU" secondAttribute="bottom" id="8mR-L9-sdV"/>
+                                    <constraint firstItem="uft-T1-MR8" firstAttribute="leading" secondItem="yw7-QE-RYa" secondAttribute="leading" id="Dbg-Wq-cOj"/>
+                                    <constraint firstItem="uft-T1-MR8" firstAttribute="top" secondItem="yw7-QE-RYa" secondAttribute="top" id="VXr-1T-IX8"/>
+                                    <constraint firstItem="NKs-lR-PDU" firstAttribute="top" secondItem="yw7-QE-RYa" secondAttribute="top" id="bxz-cf-IVP"/>
+                                    <constraint firstItem="uft-T1-MR8" firstAttribute="trailing" secondItem="NKs-lR-PDU" secondAttribute="leading" id="cYa-iO-qE9"/>
+                                    <constraint firstAttribute="bottom" secondItem="uft-T1-MR8" secondAttribute="bottom" id="lNm-iQ-sSO"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="r" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1c-zf-BjU" customClass="Label" customModule="BinarySwipe" customModuleProvider="target">
+                                <rect key="frame" x="126" y="51" width="70" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Sre-Oy-JJz"/>
+                                    <constraint firstAttribute="height" constant="70" id="s5k-do-amv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="binaryswipe" family="binaryswipe" pointSize="47"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xay-Ie-47x" firstAttribute="centerX" secondItem="5Sh-Nu-ww6" secondAttribute="centerX" id="C2u-vi-mVI"/>
+                            <constraint firstItem="Xay-Ie-47x" firstAttribute="top" secondItem="uzs-CC-fPW" secondAttribute="bottom" id="F02-FC-DJb"/>
+                            <constraint firstItem="orR-Xa-d7Q" firstAttribute="top" secondItem="8Bf-te-FtQ" secondAttribute="bottom" constant="10" id="HHr-w7-EJe"/>
+                            <constraint firstItem="uzs-CC-fPW" firstAttribute="centerX" secondItem="5Sh-Nu-ww6" secondAttribute="centerX" id="IBU-uc-GRK"/>
+                            <constraint firstItem="yw7-QE-RYa" firstAttribute="top" secondItem="orR-Xa-d7Q" secondAttribute="bottom" constant="80" id="IR1-Sr-0c1"/>
+                            <constraint firstItem="Xay-Ie-47x" firstAttribute="width" secondItem="orR-Xa-d7Q" secondAttribute="width" id="MaO-wR-xDc"/>
+                            <constraint firstItem="Xay-Ie-47x" firstAttribute="height" secondItem="orR-Xa-d7Q" secondAttribute="height" id="PIs-54-NHx"/>
+                            <constraint firstItem="E1c-zf-BjU" firstAttribute="centerX" secondItem="5Sh-Nu-ww6" secondAttribute="centerX" constant="1" id="U2h-5l-vbM"/>
+                            <constraint firstItem="uzs-CC-fPW" firstAttribute="width" secondItem="orR-Xa-d7Q" secondAttribute="width" id="Umm-h6-XpY"/>
+                            <constraint firstItem="uzs-CC-fPW" firstAttribute="height" secondItem="orR-Xa-d7Q" secondAttribute="height" id="WtN-uQ-KxG"/>
+                            <constraint firstItem="5WE-Fl-sRu" firstAttribute="bottom" secondItem="uzs-CC-fPW" secondAttribute="top" constant="-10" id="e7V-iX-luV"/>
+                            <constraint firstItem="8Bf-te-FtQ" firstAttribute="centerX" secondItem="5Sh-Nu-ww6" secondAttribute="centerX" id="lVV-tX-YlO"/>
+                            <constraint firstItem="yw7-QE-RYa" firstAttribute="centerX" secondItem="5Sh-Nu-ww6" secondAttribute="centerXWithinMargins" constant="1" id="nNE-KJ-ZZd"/>
+                            <constraint firstItem="8Bf-te-FtQ" firstAttribute="centerY" secondItem="5Sh-Nu-ww6" secondAttribute="centerY" constant="50" id="oOl-Ss-tWs"/>
+                            <constraint firstItem="5WE-Fl-sRu" firstAttribute="centerX" secondItem="5Sh-Nu-ww6" secondAttribute="centerX" id="u9C-As-hMZ"/>
+                            <constraint firstItem="E1c-zf-BjU" firstAttribute="bottom" secondItem="5WE-Fl-sRu" secondAttribute="top" constant="-70" id="uX2-79-hfu"/>
+                            <constraint firstItem="orR-Xa-d7Q" firstAttribute="centerX" secondItem="5Sh-Nu-ww6" secondAttribute="centerXWithinMargins" id="yDw-wt-2T1"/>
+                            <constraint firstItem="8Bf-te-FtQ" firstAttribute="top" secondItem="Xay-Ie-47x" secondAttribute="bottom" constant="10" id="zRd-9r-pSy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.14966984010000001" green="0.83708408680000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.14966984010000001" green="0.27974872610000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="facebookLoginButton" destination="orR-Xa-d7Q" id="1AN-TB-Aio"/>
+                        <outlet property="helperButton" destination="NKs-lR-PDU" id="TZr-Y4-Q8B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jle-DG-xJ0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1146" y="414"/>
+        </scene>
+        <!--Create Account View Controller-->
+        <scene sceneID="FTy-nk-5Jp">
+            <objects>
+                <viewController storyboardIdentifier="createAccount" id="2rc-a0-tuk" customClass="CreateAccountViewController" customModule="BinarySwipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qP3-Bl-1s3"/>
+                        <viewControllerLayoutGuide type="bottom" id="fda-1h-K1c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="login" id="KSJ-UJ-Do1" customClass="GradientView" customModule="BinarySwipe" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="r" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gl-TV-HeU" customClass="Label" customModule="BinarySwipe" customModuleProvider="target">
+                                <rect key="frame" x="126" y="51" width="70" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="LXI-EX-1KU"/>
+                                    <constraint firstAttribute="width" constant="70" id="uSj-Kp-YH3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="binaryswipe" family="binaryswipe" pointSize="47"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join to BinarySwipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQL-gm-lU0">
+                                <rect key="frame" x="77" y="131" width="167" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="m5A-jA-LMf">
+                                <rect key="frame" x="50" y="164" width="220" height="340"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gan-xT-zKg" userLabel="FirstNameField" customClass="TextField" customModule="BinarySwipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="MsG-YF-3Xb"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uRT-y0-ieL" userLabel="LastNameField" customClass="TextField" customModule="BinarySwipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="220" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ty8-oO-5sY"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qkp-MW-x1d" userLabel="PhoneField" customClass="TextField" customModule="BinarySwipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="220" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="dNt-gM-fA7"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ImG-aW-c6Y" userLabel="EmailField" customClass="TextField" customModule="BinarySwipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="150" width="220" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="8IW-oM-QI6"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSc-no-Qyf" userLabel="PasswordTextField" customClass="TextField" customModule="BinarySwipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="200" width="220" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2yt-hz-pJb"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ob-PB-ACl" customClass="FBSDKLoginButton">
+                                        <rect key="frame" x="0.0" y="250" width="220" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="e3t-03-hWW"/>
+                                        </constraints>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6b-Mf-dAC" customClass="Button" customModule="BinarySwipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="300" width="220" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Tc3-mz-qLk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                        <state key="normal" title="CREATE ACCOUNT">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOn-Yc-rTI">
+                                <rect key="frame" x="36" y="514" width="248" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOy-cT-BhP">
+                                        <rect key="frame" x="0.0" y="0.0" width="201" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdX-jz-pTd" customClass="Button" customModule="BinarySwipe" customModuleProvider="target">
+                                        <rect key="frame" x="201" y="0.0" width="47" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Sing In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="helperButtonClick:" destination="2rc-a0-tuk" eventType="touchUpInside" id="J7h-oV-4Ko"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="tdX-jz-pTd" secondAttribute="bottom" id="CUa-Cz-f1c"/>
+                                    <constraint firstItem="tdX-jz-pTd" firstAttribute="top" secondItem="fOn-Yc-rTI" secondAttribute="top" id="E8F-xG-8ud"/>
+                                    <constraint firstItem="dOy-cT-BhP" firstAttribute="leading" secondItem="fOn-Yc-rTI" secondAttribute="leading" id="KCq-aG-A80"/>
+                                    <constraint firstAttribute="bottom" secondItem="dOy-cT-BhP" secondAttribute="bottom" id="KEy-RE-S1W"/>
+                                    <constraint firstAttribute="trailing" secondItem="tdX-jz-pTd" secondAttribute="trailing" id="KL1-Pe-FVJ"/>
+                                    <constraint firstItem="dOy-cT-BhP" firstAttribute="trailing" secondItem="tdX-jz-pTd" secondAttribute="leading" id="sI5-oO-vrH"/>
+                                    <constraint firstItem="dOy-cT-BhP" firstAttribute="top" secondItem="fOn-Yc-rTI" secondAttribute="top" id="wJK-DQ-YFs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TQL-gm-lU0" firstAttribute="top" secondItem="8Gl-TV-HeU" secondAttribute="bottom" constant="10" id="AMM-0f-fRl"/>
+                            <constraint firstItem="m5A-jA-LMf" firstAttribute="leading" secondItem="KSJ-UJ-Do1" secondAttribute="leading" constant="50" id="Atq-lP-C5J"/>
+                            <constraint firstItem="m5A-jA-LMf" firstAttribute="top" secondItem="TQL-gm-lU0" secondAttribute="bottom" constant="10" id="DAg-Aq-bCY"/>
+                            <constraint firstItem="fOn-Yc-rTI" firstAttribute="centerX" secondItem="KSJ-UJ-Do1" secondAttribute="centerXWithinMargins" id="NVk-tB-aFK"/>
+                            <constraint firstAttribute="trailing" secondItem="m5A-jA-LMf" secondAttribute="trailing" constant="50" id="RjY-Mf-Xvg"/>
+                            <constraint firstItem="m5A-jA-LMf" firstAttribute="bottom" secondItem="fOn-Yc-rTI" secondAttribute="top" constant="-10" id="feA-Md-dZF"/>
+                            <constraint firstItem="8Gl-TV-HeU" firstAttribute="centerX" secondItem="KSJ-UJ-Do1" secondAttribute="centerX" constant="1" id="oZP-JP-M0M"/>
+                            <constraint firstItem="m5A-jA-LMf" firstAttribute="centerY" secondItem="KSJ-UJ-Do1" secondAttribute="centerY" constant="50" id="tgA-Z7-MB8"/>
+                            <constraint firstItem="TQL-gm-lU0" firstAttribute="centerX" secondItem="KSJ-UJ-Do1" secondAttribute="centerX" id="v7v-5j-M3M"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.14966984010000001" green="0.83708408680000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.14966984010000001" green="0.27974872610000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="facebookLoginButton" destination="9ob-PB-ACl" id="gFS-qu-DiK"/>
+                        <outlet property="helperButton" destination="tdX-jz-pTd" id="twN-u2-bSc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qg3-aU-Yya" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="414"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gfX-DW-k7d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="qZR-TX-zc3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q0z-9s-BiH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0HQ-eB-8OW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="08l-qw-c8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="414"/>
         </scene>
     </scenes>
 </document>
